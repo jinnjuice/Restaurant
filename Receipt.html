@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Submit Order</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <form class="form-horizontal">
+      <fieldset>
+
+        <!-- Form Name -->
+        <legend>Upload your receipt</legend>
+
+        <!-- File Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="uploadreceipt"></label>
+          <div class="col-md-4">
+            <input id="uploadreceipt" name="uploadreceipt" class="input-file" type="file">
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="restaurantreceipt"></label>
+          <div class="col-md-4">
+            <input id="restaurantreceipt" name="restaurantreceipt" type="text" placeholder="Name of restaurant" class="form-control input-md" required="">
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for=""></label>
+          <div class="col-md-4">
+            <input id="" name="" type="text" placeholder="$$$" class="form-control input-md" required="">
+          </div>
+        </div>
+
+        <!-- Multiple Radios -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="receiptradio"></label>
+          <div class="col-md-4">
+            <div class="radio">
+              <label for="receiptradio-0">
+                <input type="radio" name="receiptradio" id="receiptradio-0" value="1" checked="checked">Lunch
+              </label>
+            </div>
+            <div class="radio">
+              <label for="receiptradio-1">
+                <input type="radio" name="receiptradio" id="receiptradio-1" value="2">Dinner
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="notesreceipt"></label>
+          <div class="col-md-4">
+            <textarea class="form-control" id="notesreceipt" name="notesreceipt" placeholder="Notes"></textarea>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="submitreceipt"></label>
+          <div class="col-md-4">
+            <button id="submitreceipt" name="submitreceipt" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
